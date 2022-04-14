@@ -7,11 +7,12 @@
       <div class="project-img-container">
         <img class="project-img" :src="imgSrc" :alt="altText" />
       </div>
-
-      <h2 class="project-card-title">{{ title }}</h2>
-      <ul class="stack-list">
-        <Logo v-for="tech in techStack" :key="tech" :source="tech" />
-      </ul>
+      <div class="test-wrapper">
+        <h2 class="project-card-title">{{ title }}</h2>
+        <ul class="stack-list">
+          <Logo v-for="tech in techStack" :key="tech" :source="tech" />
+        </ul>
+      </div>
     </nuxt-link>
   </div>
 </template>
